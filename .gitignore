@@ -1,0 +1,11 @@
+# Sensitive credentials
+.env
+
+# Python environment and junk
+.venv/
+__pycache__/
+.idea/
+
+# Local data files (optional - keeps your GitHub clean)
+*.csv
+*.png
