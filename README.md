@@ -25,3 +25,16 @@ The biggest challenge right now is that the model is "blind" to injuries. If a s
 
 ---
 **Tony Calloway** *Computer Science Senior, East Carolina University*
+
+```mermaid
+graph TD
+    A[Raw Data Source: BartTorvik] -->|Selenium Scraper| B(Raw HTML Files)
+    C[Odds API] -->|Python Requests| D(Live Market Odds)
+    B --> E{Data Processor}
+    D --> E
+    E -->|Clean & Align| F[Inference Engine]
+    F -->|Apply Predictive Formulas| G(Score Predictions)
+    G --> H{Edge Detection}
+    H -->|Compare to Market| I[Identify Value Plays]
+    I --> J[Validate: 30-20 Record]
+```
